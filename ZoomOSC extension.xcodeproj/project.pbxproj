@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		73A919F22D07BD1600572D04 /* CocoaAsyncSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 73A919F12D07BD1600572D04 /* CocoaAsyncSocket */; };
+		73A919F52D07BD6500572D04 /* SwiftASCII in Frameworks */ = {isa = PBXBuildFile; productRef = 73A919F42D07BD6500572D04 /* SwiftASCII */; };
+		73DB56142D06843A0078F9B5 /* OSCKit in Frameworks */ = {isa = PBXBuildFile; productRef = 73DB56132D06843A0078F9B5 /* OSCKit */; };
+		73DB56162D06843A0078F9B5 /* OSCKitCore in Frameworks */ = {isa = PBXBuildFile; productRef = 73DB56152D06843A0078F9B5 /* OSCKitCore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		73DB55D92D0677B00078F9B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +59,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73A919F52D07BD6500572D04 /* SwiftASCII in Frameworks */,
+				73DB56162D06843A0078F9B5 /* OSCKitCore in Frameworks */,
+				73DB56142D06843A0078F9B5 /* OSCKit in Frameworks */,
+				73A919F22D07BD1600572D04 /* CocoaAsyncSocket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +83,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73A919EF2D07BCDC00572D04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		73DB55BC2D0677AE0078F9B5 = {
 			isa = PBXGroup;
 			children = (
 				73DB55C72D0677AE0078F9B5 /* ZoomOSC extension */,
 				73DB55DB2D0677B00078F9B5 /* ZoomOSC extensionTests */,
 				73DB55E52D0677B00078F9B5 /* ZoomOSC extensionUITests */,
+				73A919EF2D07BCDC00572D04 /* Frameworks */,
 				73DB55C62D0677AE0078F9B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +131,10 @@
 			);
 			name = "ZoomOSC extension";
 			packageProductDependencies = (
+				73DB56132D06843A0078F9B5 /* OSCKit */,
+				73DB56152D06843A0078F9B5 /* OSCKitCore */,
+				73A919F12D07BD1600572D04 /* CocoaAsyncSocket */,
+				73A919F42D07BD6500572D04 /* SwiftASCII */,
 			);
 			productName = "ZoomOSC extension";
 			productReference = 73DB55C52D0677AE0078F9B5 /* ZoomOSC extension.app */;
@@ -195,6 +218,11 @@
 			);
 			mainGroup = 73DB55BC2D0677AE0078F9B5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				73DB56122D06843A0078F9B5 /* XCLocalSwiftPackageReference "../../GitHub/OSCKit" */,
+				73A919F02D07BCF800572D04 /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */,
+				73A919F32D07BD6500572D04 /* XCRemoteSwiftPackageReference "SwiftASCII" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 73DB55C62D0677AE0078F9B5 /* Products */;
 			projectDirPath = "";
@@ -551,6 +579,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		73DB56122D06843A0078F9B5 /* XCLocalSwiftPackageReference "../../GitHub/OSCKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../GitHub/OSCKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		73A919F02D07BCF800572D04 /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/robbiehanson/CocoaAsyncSocket";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.6.5;
+			};
+		};
+		73A919F32D07BD6500572D04 /* XCRemoteSwiftPackageReference "SwiftASCII" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orchetect/SwiftASCII";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		73A919F12D07BD1600572D04 /* CocoaAsyncSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 73A919F02D07BCF800572D04 /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */;
+			productName = CocoaAsyncSocket;
+		};
+		73A919F42D07BD6500572D04 /* SwiftASCII */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 73A919F32D07BD6500572D04 /* XCRemoteSwiftPackageReference "SwiftASCII" */;
+			productName = SwiftASCII;
+		};
+		73DB56132D06843A0078F9B5 /* OSCKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OSCKit;
+		};
+		73DB56152D06843A0078F9B5 /* OSCKitCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OSCKitCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 73DB55BD2D0677AE0078F9B5 /* Project object */;
 }

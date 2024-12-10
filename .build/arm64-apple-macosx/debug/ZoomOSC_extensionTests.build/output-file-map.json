@@ -1,0 +1,35 @@
+{
+  "": {
+    "swift-dependencies": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/master.swiftdeps"
+  },
+  "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/ZoomOSC extensionTests/HotkeyManagerTests.swift": {
+    "dependencies": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/HotkeyManagerTests.d",
+    "object": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/HotkeyManagerTests.swift.o",
+    "swiftmodule": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/HotkeyManagerTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/HotkeyManagerTests.swiftdeps"
+  },
+  "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/ZoomOSC extensionTests/NotificationManagerTests.swift": {
+    "dependencies": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/NotificationManagerTests.d",
+    "object": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/NotificationManagerTests.swift.o",
+    "swiftmodule": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/NotificationManagerTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/NotificationManagerTests.swiftdeps"
+  },
+  "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/ZoomOSC extensionTests/OSCCommunicationTests.swift": {
+    "dependencies": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/OSCCommunicationTests.d",
+    "object": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/OSCCommunicationTests.swift.o",
+    "swiftmodule": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/OSCCommunicationTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/OSCCommunicationTests.swiftdeps"
+  },
+  "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/ZoomOSC extensionTests/TestHelpers.swift": {
+    "dependencies": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/TestHelpers.d",
+    "object": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/TestHelpers.swift.o",
+    "swiftmodule": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/TestHelpers~partial.swiftmodule",
+    "swift-dependencies": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/TestHelpers.swiftdeps"
+  },
+  "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/ZoomOSC extensionTests/ZoomOSC_extensionTests.swift": {
+    "dependencies": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/ZoomOSC_extensionTests.d",
+    "object": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/ZoomOSC_extensionTests.swift.o",
+    "swiftmodule": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/ZoomOSC_extensionTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionTests.build/ZoomOSC_extensionTests.swiftdeps"
+  }
+}

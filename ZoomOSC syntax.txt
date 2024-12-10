@@ -1,0 +1,232 @@
+Below is the final syntax list document with the requested sections removed. Each ZoomOSC command begins with /zoom.
+
+1. Targeting Users
+
+1.1 Single User Target Types:
+	•	/targetID {int}
+	•	/userName {str} (case-sensitive, exact match)
+	•	/galIndex {int}
+	•	/zoomID {int}
+	•	/galleryPosition {str "row,col"} (MAC only)
+	•	/me (self)
+
+1.2 Group Macros:
+	•	/all (all participants)
+	•	/targets (all in target list)
+	•	/panelists (all webinar panelists)
+	•	/attendees (all webinar attendees)
+
+1.3 Exclusionary Group Macros:
+	•	/allExcept/[TARGET TYPE]
+	•	/targetsExcept/[TARGET TYPE]
+	•	/panelistsExcept/[TARGET TYPE]
+	•	/attendeesExcept/[TARGET TYPE]
+
+1.4 Custom Groups:
+	•	/users/[TARGET TYPE] {list of targets}
+
+2. User Commands
+
+2.1 Video/Mic Commands:
+	•	.../videoOn
+	•	.../videoOff
+	•	.../toggleVideo
+	•	.../mute
+	•	.../unMute
+	•	.../toggleMute
+
+2.2 Spotlight Commands:
+	•	.../spot
+	•	.../addSpot (PRO)
+	•	.../unSpot
+	•	.../toggleSpot (PRO)
+
+2.3 Hand Raising Commands:
+	•	.../raiseHand
+	•	.../lowerHand
+	•	.../toggleHand
+
+2.4 Pin Commands:
+	•	.../pin
+	•	.../addPin (PRO)
+	•	.../unPin
+	•	.../pin2
+	•	.../unPin2
+	•	.../togglePin (PRO)
+	•	.../togglePin2 (PRO)
+	•	.../clearPin (PRO)
+
+2.5 View Commands:
+	•	.../setGalleryView
+	•	.../setSpeakerView
+	•	.../galleryPageNext
+	•	.../galleryPagePrev
+
+2.6 User Roles and Actions:
+	•	.../makeHost
+	•	.../makeCoHost
+	•	.../reclaimHost
+	•	.../revokeCoHost
+	•	.../makePanelist
+	•	.../makeAttendee
+	•	.../eject
+	•	.../rename {str} (PRO)
+	•	.../allowToRecord (PRO)
+	•	.../disallowToRecord (PRO)
+
+2.7 Chat Commands:
+	•	.../chat {str message}
+
+2.10 Waiting Room Commands (User-Level):
+	•	.../sendToWaitingRoom (PRO)
+	•	.../admit (PRO)
+
+2.11 Screen/Window Sharing Commands (User-Level) (PRO):
+	•	.../listScreens
+	•	.../listWindows (MAC)
+	•	.../startScreenShare {screenID|screenName}
+	•	.../startWindowShare {windowID|windowName} (MAC)
+	•	.../stopShare
+	•	.../startScreenSharePrimary
+	•	.../startAudioShare (WIN)
+	•	.../enableComputerSoundWhenSharing
+	•	.../disableComputerSoundWhenSharing
+	•	.../startCameraShare
+	•	.../shareNextCamera
+	•	.../enableOptimizeVideo
+	•	.../disableOptimizeVideo
+	•	.../setWindowSize {width} {height} (MAC, BETA)
+	•	.../setWindowPosition {x} {y} (MAC, BETA)
+
+3. Global Commands
+
+3.1 Meeting Controls:
+	•	/zoom/enableUsersUnmute
+	•	/zoom/disableUsersUnmute
+	•	/zoom/all/mute
+	•	/zoom/all/unMute
+	•	/zoom/lowerAllHands
+	•	/zoom/clearSpot (PRO)
+	•	/zoom/ping [arg]
+	•	/zoom/joinMeeting {ID} {pass} {userName} (PRO)
+	•	/zoom/leaveMeeting (PRO)
+	•	/zoom/endMeeting (PRO)
+	•	/zoom/chatAll {str message}
+	•	/zoom/ejectAttendees (Webinar)
+	•	/zoom/getWebinarReactionCounts (PRO)
+	•	/zoom/resetWebinarReactionCounts (PRO)
+
+3.2 Breakout Room Commands (Global-Level) (PRO, BETA):
+	•	/zoom/listBreakouts
+	•	/zoom/createBreakout {name|index}
+	•	/zoom/deleteBreakout {name|index}
+	•	/zoom/deleteAllBreakouts
+	•	/zoom/openBreakouts
+	•	/zoom/closeBreakouts
+	•	/zoom/configureBreakouts {settings...}
+	•	/zoom/broadcastToBreakouts {message}
+
+3.5 Recording Commands:
+	•	/zoom/startLocalRecording
+	•	/zoom/pauseLocalRecording
+	•	/zoom/resumeLocalRecording
+	•	/zoom/stopLocalRecording
+	•	/zoom/startCloudRecording
+	•	/zoom/pauseCloudRecording
+	•	/zoom/resumeCloudRecording
+	•	/zoom/stopCloudRecording
+
+3.6 Waiting Room and ZAK Join Commands (Global-Level) (PRO):
+	•	/zoom/enableWaitingRoom
+	•	/zoom/disableWaitingRoom
+	•	/zoom/messageWaitingRoom {message}
+	•	/zoom/admitAll
+	•	/zoom/zakJoin {zak} {meetingID} {name} [pass]
+	•	/zoom/zakStart {zak} {meetingID} {name} [pass]
+
+3.7 Memory Management Commands:
+	•	/zoom/update
+	•	/zoom/include
+	•	/zoom/load [from file or args]
+	•	/zoom/save
+	•	/zoom/reset
+	•	/zoom/list
+
+3.8 Gallery Tracking and Data Requests:
+	•	/zoom/galTrackMode {0|1}
+	•	/zoom/subscribe {int mode}
+	•	/zoom/getGalleryOrder
+	•	/zoom/getSpotOrder
+	•	/zoom/galCount
+
+4. Outputs
+
+4.1 Common User Event Outputs:
+	•	/zoomosc/user|me/videoOn
+	•	/zoomosc/user|me/videoOff
+	•	/zoomosc/user|me/mute
+	•	/zoomosc/user|me/unMute
+	•	/zoomosc/user|me/activeSpeaker
+	•	/zoomosc/user|me/spotlightOn
+	•	/zoomosc/user|me/spotlightOff
+	•	/zoomosc/user|me/roleChanged {int role}
+	•	/zoomosc/user|me/online
+	•	/zoomosc/user|me/offline
+	•	/zoomosc/user|me/handRaised {str message}
+	•	/zoomosc/user|me/handLowered
+	•	/zoomosc/user|me/chat {str message} {str message_id} {int type}
+	•	/zoomosc/user|me/userNameChanged {str oldUserName}
+
+4.2 Breakout Rooms List Output:
+	•	/zoomosc/listBreakouts {int index} {str bo_name}
+
+4.3 List Output (Memory):
+	•	/zoomosc/user|me/list {targetCount} {listCount} {userRole} {onlineStatus} {videoStatus} {audioStatus} {handRaised}
+
+4.4 Meeting Status Output:
+	•	/zoomosc/meetingStatusChanged {status_code} {error_code} {exit_code}
+
+4.5 Ping Reply (Pong) Output:
+	•	/zoomosc/pong {pingArg} {version} {subscribeMode} {galTrackMode} {inCallStatus} {numTargets} {numUsersInCall} {isPro}
+
+4.6 Gallery and Spotlight Information Outputs:
+	•	/zoomosc/galleryOrder {int...}
+	•	/zoomosc/galleryCount {int count}
+	•	/zoomosc/galleryShape {rows} {cols} (MAC)
+	•	/zoomosc/spotOrder {int...}
+
+4.7 User Emoji / Speaking / Waiting Room Outputs:
+	•	/zoomosc/user|me/emoji {int emojiID}
+	•	/zoomosc/user|me/isSpeaking
+	•	/zoomosc/user|me/stoppedSpeaking
+	•	/zoomosc/user|me/joinedWaitingRoom
+	•	/zoomosc/user|me/leftWaitingRoom
+
+4.8 Webinar Reaction Counts Output (PRO):
+	•	/zoomosc/webinarReactionCounts {clap} {thumbsUp} {heart} {joy} {openMouth} {tada}
+
+4.9 Audio/Video Share Events Outputs:
+	•	/zoomosc/user|me/audioShareStarted
+	•	/zoomosc/user|me/audioShareStopped
+	•	/zoomosc/user|me/videoShareStarted
+	•	/zoomosc/user|me/videoShareStopped
+
+4.13 Device and Background Information Outputs (PRO):
+	•	/zoomosc/user|me/micDevices {index} {size} {deviceID} {deviceName} {isSelected}
+	•	/zoomosc/user|me/speakerDevices {index} {size} {deviceID} {deviceName} {isSelected}
+	•	/zoomosc/user|me/cameraDevices {index} {size} {deviceID} {deviceName} {isSelected}
+	•	/zoomosc/user|me/backgrounds {index} {size} {bgName} (MAC)
+	•	/zoomosc/user|me/windows {windowID} {windowName} (MAC)
+	•	/zoomosc/user|me/screens {screenID} {screenName}
+	•	/zoomosc/user|me/micDevice {deviceID} {deviceName}
+	•	/zoomosc/user|me/speakerDevice {deviceID} {deviceName}
+	•	/zoomosc/user|me/cameraDevice {deviceID} {deviceName}
+	•	/zoomosc/user|me/background {bgID} {bgName} (MAC)
+	•	/zoomosc/user|me/filter {filterID} {filterName} (MAC)
+	•	/zoomosc/micLevel {int 0-100}
+	•	/zoomosc/speakerVolume {int 0-100}
+
+4.14 Waiting Room User List Output:
+	•	/zoomosc/waitingRoomUserList (includes user prefix info)
+
+This is the final syntax list document reflecting all included sections and commands after requested removals.

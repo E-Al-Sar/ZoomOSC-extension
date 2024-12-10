@@ -1,0 +1,52 @@
+Participant Identification & Tracking
+	•	Name-based criteria detection (keywords like “Chicago,” “312,” “Top”)
+	•	Auto-tagging participants based on criteria
+	•	Dynamic participant list updates
+	•	Persistent participant notes and history tracking
+	•	Participant historical data (times joined, frequency)
+
+Automated & On-Demand Actions
+	•	Automated pinning/multi-pinning based on criteria
+	•	Auto-greeting messages to specified participants
+	•	Hotkey/voice-triggered actions (pin/unpin, highlight)
+	•	Automated spotlighting for key participants
+
+Dedicated Messaging System (Chat Management)
+	•	External chat viewer separate from Zoom’s UI
+	•	Grouping messages by participant
+	•	Topic/channel grouping of messages based on keywords
+	•	Archive & search full chat history
+	•	Alert/notification system when specific participants message
+
+Participant Entry & Exit Notifications
+	•	Smart notifications on participant entry (meeting criteria)
+	•	Configurable threshold alerts (e.g., “More than 3 ‘Top’ participants joined”)
+	•	Visual & auditory notification options
+
+Integrations & Expansions
+	•	Apple Shortcuts integration for automated workflows
+	•	Siri/voice assistant commands for quick actions
+	•	CRM/Calendar integration (e.g., log participant attendance)
+	•	ZoomOSC API utilization for automated control (pin, spotlight, rename, etc.)
+
+Customization & User Interface
+	•	Rules engine/criteria builder UI for defining participant criteria and responses
+	•	Drag-and-drop chat/message view configuration
+	•	Enable/disable modules as needed
+	•	Scalable interface for different screen sizes
+
+Data Storage & Security
+	•	Local database/storage for participant data & notes
+	•	Privacy controls and compliance considerations
+	•	Backup & export capabilities for data portability
+
+Reliability & Performance
+	•	Adaptation to Zoom updates (resilience)
+	•	Logging & error handling for all automated actions
+	•	Minimizing latency in participant detection and response
+
+Additional Features (Wishlist/Future Considerations)
+	•	Facial recognition (if allowed, for participant ID)
+	•	Realtime keyword alerts for chat messages
+	•	Auto-transcription & participant highlighting
+	•	Cross-meeting rules that apply to multiple recurring sessions

@@ -1,0 +1,4 @@
+module SwiftASCII {
+    header "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/SwiftASCII.build/SwiftASCII-Swift.h"
+    requires objc
+}

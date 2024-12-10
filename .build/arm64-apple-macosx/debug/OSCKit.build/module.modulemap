@@ -1,0 +1,4 @@
+module OSCKit {
+    header "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/OSCKit.build/OSCKit-Swift.h"
+    requires objc
+}

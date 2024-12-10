@@ -1,0 +1,4 @@
+module ZoomOSC_extensionPackageTests {
+    header "/Users/erickalvarez/Documents/Xcode Gits/ZoomOSC extension/.build/arm64-apple-macosx/debug/ZoomOSC_extensionPackageTests.build/ZoomOSC_extensionPackageTests-Swift.h"
+    requires objc
+}

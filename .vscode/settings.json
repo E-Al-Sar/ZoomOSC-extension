@@ -1,0 +1,11 @@
+{
+    "continue.enableDebugLogs": true,
+    "continue.enableQuickActions": true,
+    "cursor.aipreview.enabled": true,
+    "cursor.cmdk.useThemedDiffBackground": true,
+    "window.density.editorTabHeight": "compact",
+    "workbench.commandPalette.experimental.suggestCommands": true,
+    "workbench.colorTheme": "Abyss",
+    "workbench.fontAliasing": "antialiased",
+    "workbench.iconTheme": "vs-minimal"
+}
